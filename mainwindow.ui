@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Anno Pro</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: black;
+font-weight: bold;</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>130</y>
+      <width>700</width>
+      <height>370</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_image_view_1">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>300</width>
+       <height>300</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_image_view_2">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>30</y>
+       <width>300</width>
+       <height>300</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_image_label_1">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>4</y>
+       <width>300</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>left</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_image_label_2">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>4</y>
+       <width>300</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>right</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_image_name_1">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>340</y>
+       <width>300</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_image_name_2">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>340</y>
+       <width>300</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton_save">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>30</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>SAVE</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider_progress">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>30</y>
+      <width>361</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_image_compare_status">
+    <property name="geometry">
+     <rect>
+      <x>365</x>
+      <y>55</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_progress_label">
+    <property name="geometry">
+     <rect>
+      <x>299</x>
+      <y>30</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PROGRESS</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>510</y>
+      <width>700</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="pushButton_prev">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>151</x>
+       <y>18</y>
+       <width>84</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PREV</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_next">
+     <property name="geometry">
+      <rect>
+       <x>241</x>
+       <y>18</y>
+       <width>84</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>NEXT</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_unsure">
+     <property name="geometry">
+      <rect>
+       <x>331</x>
+       <y>18</y>
+       <width>84</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>UNSURE</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_switch">
+     <property name="geometry">
+      <rect>
+       <x>421</x>
+       <y>18</y>
+       <width>84</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SWITCH</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_no">
+     <property name="geometry">
+      <rect>
+       <x>511</x>
+       <y>18</y>
+       <width>84</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>NO</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_ok">
+     <property name="geometry">
+      <rect>
+       <x>601</x>
+       <y>18</y>
+       <width>84</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>YES</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
