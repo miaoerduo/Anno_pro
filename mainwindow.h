@@ -2,26 +2,33 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QCloseEvent>
+#include <QKeyEvent>
 #include <vector>
 #include <string>
-namespace Ui {
 
+namespace Ui {
 class MainWindow;
 }
 
+enum AnnoState {
+    UNKNOWN = 0,  // 未标注
+    YES = 1,      // 匹配
+    NO = 2,       // 不匹配
+    UNSURE = 3    // 不确定
+};
+
 class MainWindow : public QMainWindow
 {
-    enum AnnoState {
-        UNKNOWN = 0,  // 未标注
-        YES = 1,      // 匹配
-        NO = 2,       // 不匹配
-        UNSURE = 3    // 不确定
-    };
     Q_OBJECT
 
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+
+protected:
+     void closeEvent(QCloseEvent *event);   // 窗口关闭事件
+     void keyReleaseEvent(QKeyEvent *event);  // 键盘事件
 
 private slots:
     void on_pushButton_save_clicked();
@@ -50,6 +57,7 @@ private:
     int current_idx;                        // 当前图片对的id
     int total_pair_num;                     // 总共的图片对的数目
     std::vector< AnnoState > annotation_list;  // 标注的结果
+    bool updated;                            // 表示结果保存之后有没有更新
 };
 
 #endif // MAINWINDOW_H

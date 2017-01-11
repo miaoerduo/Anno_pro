@@ -282,6 +282,32 @@ font-weight: bold;</string>
      </property>
     </widget>
    </widget>
+   <widget class="QLabel" name="label_prev_image_compare_status">
+    <property name="geometry">
+     <rect>
+      <x>285</x>
+      <y>85</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_next_image_compare_status">
+    <property name="geometry">
+     <rect>
+      <x>475</x>
+      <y>85</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
